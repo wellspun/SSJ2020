@@ -6,7 +6,17 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: floating
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Monster
+    second: {fileID: 2100000, guid: 7826395badb401843aab198211b63132, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Robe1
+    second: {fileID: 2100000, guid: 8ef2265f33f4cf3429024a85c71a418d, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

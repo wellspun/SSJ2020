@@ -3,7 +3,12 @@ guid: 3ec85071d39585a408586fabee3c77a8
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dagger_low_poly_Group2Mat
+    second: {fileID: 2100000, guid: 08130f1fb849fd941a252424c86a359e, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

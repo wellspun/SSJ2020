@@ -3,7 +3,12 @@ guid: 741d4afa93e5fd946a6ab414fdaf9bfc
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: nurbsToPoly1Mat
+    second: {fileID: 2100000, guid: 40e3e22cb5dd04947b50852535914e15, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

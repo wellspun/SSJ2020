@@ -3,7 +3,12 @@ guid: 5584a9fd5315c3349bac645024c989d9
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pillow_low_uv_ZBrushPolyMesh3DMat
+    second: {fileID: 2100000, guid: 85339d4ad14d1c84c816df14cff41ca4, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
