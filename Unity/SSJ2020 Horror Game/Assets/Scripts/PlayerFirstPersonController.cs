@@ -6,12 +6,18 @@ using UnityEngine;
 public class PlayerFirstPersonController : MonoBehaviour
 {
 
+	[Header( "Mouse Movement" )]
 	[Range( 0, 100 )]
 	public float MoveSpeed = 1;
 	[Range( 0, 1000 )]
 	public float MouseYSpeed = 100;
 	[Range( 0, 1000 )]
 	public float MouseXSpeed = 100;
+
+	[Header( "Player Interaction" )]
+	[Range( 0, 10 )]
+	public float InteractionRange = 2;
+
 
     //[Header( "Obj Refs" )]
     private CharacterController characterController;
@@ -41,5 +47,10 @@ public class PlayerFirstPersonController : MonoBehaviour
 
 		Vector3 mouseMoveXVec = Input.GetAxis( "Mouse X" ) * Vector3.up * Time.deltaTime * MouseXSpeed;
 		transform.Rotate( mouseMoveXVec );
+
+
+		if( Physics.Raycast( charCamera.ViewportPointToRay( new Vector3( .5f, .5f ) ), out RaycastHit hitInfo, InteractionRange, LayerController.InteractableLayer ) ) {
+
+		}
 	}
 }
