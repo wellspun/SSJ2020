@@ -49,8 +49,29 @@ public class PlayerFirstPersonController : MonoBehaviour
 		transform.Rotate( mouseMoveXVec );
 
 
-		if( Physics.Raycast( charCamera.ViewportPointToRay( new Vector3( .5f, .5f ) ), out RaycastHit hitInfo, InteractionRange, LayerController.InteractableLayer ) ) {
+		RaycastHit[] interactablesHit = Physics.RaycastAll( charCamera.ViewportPointToRay( new Vector3( .5f, .5f ) ), InteractionRange, 1 << LayerController.InteractableLayer );
+		if( interactablesHit.Length > 0 ) {
 
+			foreach( RaycastHit rayHit in interactablesHit ) {
+				Interactable interactableHit = rayHit.collider.gameObject.GetComponentInParent<Interactable>();
+				if( interactableHit == null ) {
+					Debug.LogError( "Interactable collider hit but no Interactable script, error" );
+					continue;
+				}
+				if( !interactableHit.AllowInteraction )
+					continue;
+
+				InteractableCon.Instance.HighlightInteractable( interactableHit );
+			}
+
+		} else {
+			InteractableCon.Instance.ClearHighlightedInteractable();
 		}
+	}
+
+	private void OnDrawGizmos() {
+		Gizmos.color = Color.blue;
+		if( Application.isPlaying )
+			Gizmos.DrawRay( charCamera.ViewportPointToRay( new Vector3( .5f, .5f ) ) );
 	}
 }
