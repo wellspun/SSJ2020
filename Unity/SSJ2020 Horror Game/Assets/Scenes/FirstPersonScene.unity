@@ -1130,6 +1130,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerFirstPersonController
       objectReference: {fileID: 0}
+    - target: {fileID: 3539165508977652477, guid: d527b173017217243b3e0a4796e123a4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6486738524898449987, guid: d527b173017217243b3e0a4796e123a4, type: 3}
       propertyPath: m_RootOrder
       value: 0
