@@ -23,7 +23,10 @@ public class InteractableCon : MonoBehaviour
 	}
 
 	public bool InteractWithCurrInteractable() {
-		return CurrHighlightedInteractable.Interact();
+		if( CurrHighlightedInteractable != null )
+			return CurrHighlightedInteractable.Interact();
+
+		return false;
 	}
 
 	public void HighlightInteractable( Interactable toHighlight ) {
