@@ -266,10 +266,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3866006577166434663, guid: 76f4fef01548dfa42925f69b7a3e8bb8, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7805689359992637705, guid: 76f4fef01548dfa42925f69b7a3e8bb8, type: 3}
       propertyPath: m_Name
       value: GameWorld

@@ -1,5 +1,49 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5360153223258404435
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3173162398730419064}
+  - component: {fileID: 3870278523891133419}
+  m_Layer: 0
+  m_Name: Cube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3173162398730419064
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5360153223258404435}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.55, z: 1.12}
+  m_LocalScale: {x: 2.2722707, y: 2.6771336, z: 4.5785}
+  m_Children: []
+  m_Father: {fileID: 7481959183673329763}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &3870278523891133419
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5360153223258404435}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000002, y: 1, z: 1.0000002}
+  m_Center: {x: -0.00000047683716, y: 0, z: 0.00000023841875}
 --- !u!1001 &870544490578908393
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -133,5 +177,10 @@ PrefabInstance:
 --- !u!4 &2400089267514407583 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5787218027154172349, guid: 7b70f73788e7c294a8bfdff7d475ea4e, type: 3}
+  m_PrefabInstance: {fileID: 8151093502863643426}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7481959183673329763 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1642620233656867649, guid: 7b70f73788e7c294a8bfdff7d475ea4e, type: 3}
   m_PrefabInstance: {fileID: 8151093502863643426}
   m_PrefabAsset: {fileID: 0}
